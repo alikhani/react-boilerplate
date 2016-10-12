@@ -1,0 +1,13 @@
+rbp:
+ build: .
+ #volumes:
+ #  - "./server:/stories/server"
+ #  - "./app:/stories/app"
+ #  - "./internals:/stories/internals"
+ ports:
+   - "3000:3000"
+ environment:
+ #  NODE_ENV: development
+   BASE_URL: 'https://telenor.vionel.com/api/v1'
+ #command:
+ #  "npm start"
